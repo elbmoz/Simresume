@@ -124,6 +124,99 @@
     --sidebar-border: 60 5% 15%;
     --sidebar-ring: 260 60% 70%;
   }
+
+  /* Morandi Blue Theme */
+  .theme-morandi-blue {
+    --background: 216 33% 96%;
+    --foreground: 220 15% 20%;
+    --card: 216 33% 96%;
+    --card-foreground: 220 15% 20%;
+    --popover: 216 33% 96%;
+    --popover-foreground: 220 15% 20%;
+    --primary: 220 30% 45%;
+    --primary-foreground: 216 33% 96%;
+    --secondary: 216 25% 88%;
+    --secondary-foreground: 220 15% 20%;
+    --muted: 218 12% 65%;
+    --muted-foreground: 220 8% 45%;
+    --accent: 216 20% 90%;
+    --accent-foreground: 220 30% 45%;
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 216 33% 96%;
+    --border: 216 18% 85%;
+    --input: 216 18% 85%;
+    --ring: 220 30% 45%;
+    --sidebar-background: 216 30% 94%;
+    --sidebar-foreground: 220 15% 25%;
+    --sidebar-primary: 220 30% 45%;
+    --sidebar-primary-foreground: 216 33% 96%;
+    --sidebar-accent: 216 20% 90%;
+    --sidebar-accent-foreground: 220 30% 45%;
+    --sidebar-border: 216 18% 85%;
+    --sidebar-ring: 220 30% 45%;
+  }
+
+  /* Morandi Green Theme */
+  .theme-morandi-green {
+    --background: 150 25% 96%;
+    --foreground: 160 15% 20%;
+    --card: 150 25% 96%;
+    --card-foreground: 160 15% 20%;
+    --popover: 150 25% 96%;
+    --popover-foreground: 160 15% 20%;
+    --primary: 158 35% 42%;
+    --primary-foreground: 150 25% 96%;
+    --secondary: 150 20% 88%;
+    --secondary-foreground: 160 15% 20%;
+    --muted: 155 10% 65%;
+    --muted-foreground: 160 8% 45%;
+    --accent: 150 18% 90%;
+    --accent-foreground: 158 35% 42%;
+    --destructive: 0 65% 60%;
+    --destructive-foreground: 150 25% 96%;
+    --border: 150 15% 85%;
+    --input: 150 15% 85%;
+    --ring: 158 35% 42%;
+    --sidebar-background: 150 22% 94%;
+    --sidebar-foreground: 160 15% 25%;
+    --sidebar-primary: 158 35% 42%;
+    --sidebar-primary-foreground: 150 25% 96%;
+    --sidebar-accent: 150 18% 90%;
+    --sidebar-accent-foreground: 158 35% 42%;
+    --sidebar-border: 150 15% 85%;
+    --sidebar-ring: 158 35% 42%;
+  }
+
+  /* Morandi Pink Theme */
+  .theme-morandi-pink {
+    --background: 350 30% 97%;
+    --foreground: 345 15% 20%;
+    --card: 350 30% 97%;
+    --card-foreground: 345 15% 20%;
+    --popover: 350 30% 97%;
+    --popover-foreground: 345 15% 20%;
+    --primary: 340 35% 55%;
+    --primary-foreground: 350 30% 97%;
+    --secondary: 350 25% 90%;
+    --secondary-foreground: 345 15% 20%;
+    --muted: 345 12% 68%;
+    --muted-foreground: 345 10% 48%;
+    --accent: 350 22% 92%;
+    --accent-foreground: 340 35% 55%;
+    --destructive: 0 60% 55%;
+    --destructive-foreground: 350 30% 97%;
+    --border: 350 18% 88%;
+    --input: 350 18% 88%;
+    --ring: 340 35% 55%;
+    --sidebar-background: 350 28% 95%;
+    --sidebar-foreground: 345 15% 25%;
+    --sidebar-primary: 340 35% 55%;
+    --sidebar-primary-foreground: 350 30% 97%;
+    --sidebar-accent: 350 22% 92%;
+    --sidebar-accent-foreground: 340 35% 55%;
+    --sidebar-border: 350 18% 88%;
+    --sidebar-ring: 340 35% 55%;
+  }
 }
 
 @layer base {

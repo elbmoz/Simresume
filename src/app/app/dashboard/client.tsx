@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconResumes, IconTemplates, IconSettings, IconAI } from "@/components/shared/icons/SidebarIcons";
+import { IconResumes, IconTemplates, IconSettings, IconAI, IconSmartScore } from "@/components/shared/icons/SidebarIcons";
 import { usePathname, useRouter } from "@/lib/navigation";
 import {
   Sidebar,
@@ -20,7 +20,7 @@ import {
   TooltipProvider,
   TooltipTrigger
 } from "@/components/ui/tooltip";
-import Logo from "@/components/shared/Logo";
+
 import { useLocale, useTranslations } from "@/i18n/compat/client";
 
 interface MenuItem {
@@ -43,6 +43,11 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
       title: t("sidebar.templates"),
       url: "/app/dashboard/templates",
       icon: IconTemplates,
+    },
+    {
+      title: t("sidebar.smartScore") || "智能评分",
+      url: "/app/dashboard/smart-score",
+      icon: IconSmartScore,
     },
     {
       title: t("sidebar.ai"),
@@ -85,18 +90,14 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
       <SidebarProvider open={open} onOpenChange={setOpen}>
         <Sidebar
           collapsible={collapsible}
-          className="border-r border-border/40 bg-card/50 backdrop-blur-xl"
+          className="border-r border-border/30 bg-gradient-to-b from-[#D8DBDF] to-[#CCD0D5] dark:from-zinc-800 dark:to-zinc-700"
         >
-          <SidebarHeader className="h-16 flex items-center justify-center border-b border-border/40">
+          <SidebarHeader className="h-16 flex items-center justify-center border-b border-border/20">
             <div className="w-full cursor-pointer justify-center flex items-center" onClick={() => router.push(`/${locale}`)}
             >
-              <Logo
-                className=" hover:opacity-80 transition-opacity"
-                size={48}
-              />
               {open && (
                 <span className="font-bold text-lg tracking-tight">
-                  {t("sidebar.appName")}
+                  Simresume
                 </span>
               )}
             </div>
@@ -104,9 +105,17 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
           <SidebarContent className="px-3 py-4">
             <SidebarGroup>
               <SidebarGroupContent>
-                <SidebarMenu className="space-y-1">
+                <SidebarMenu className="space-y-2">
                   {sidebarItems.map((item) => {
                     const active = isItemActive(item);
+                    const iconColors = [
+                      "from-[#8FA4B8] to-[#7A92A8]",
+                      "from-[#A89BBB] to-[#9685AD]",
+                      "from-[#9DB5AA] to-[#88A396]",
+                      "from-[#C4A98F] to-[#B89D82]",
+                      "from-[#9E9E9E] to-[#888888]",
+                    ];
+                    const colorIndex = sidebarItems.indexOf(item) % iconColors.length;
                     return (
                       <TooltipProvider delayDuration={0} key={item.title}>
                         <Tooltip>
@@ -115,34 +124,40 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
                               <SidebarMenuButton
                                 asChild
                                 isActive={active}
-                                className={`w-full transition-all duration-200 ease-in-out h-12 mb-1 [&>svg]:size-auto ${active
-                                  ? "bg-primary/10 text-primary font-bold hover:bg-primary/20 hover:text-primary"
-                                  : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                                className={`w-full transition-all duration-200 ease-in-out h-14 rounded-2xl mb-1 ${active
+                                  ? "bg-gradient-to-br from-primary/20 to-primary/10 shadow-sm"
+                                  : "hover:bg-gradient-to-br hover:from-accent/50 hover:to-accent/30"
                                   }`}
                               >
                                 <div
-                                  className="flex items-center gap-2 px-2 cursor-pointer"
+                                  className="flex items-center gap-3 px-3 cursor-pointer"
                                   onClick={() => handleItemClick(item)}
                                 >
-                                  <item.icon
-                                    size={24}
-                                    active={active}
-                                  />
+                                  <div className={`w-10 h-10 rounded-2xl bg-gradient-to-br ${iconColors[colorIndex]}/40 flex items-center justify-center`}>
+                                    <item.icon
+                                      size={20}
+                                      active={active}
+                                      className="text-foreground/70"
+                                    />
+                                  </div>
                                   {open && (
-                                    <span className="flex-1 text-sm">
+                                    <span className={`flex-1 text-sm font-medium ${active ? "text-primary" : "text-foreground"}`}>
                                       {item.title}
                                     </span>
+                                  )}
+                                  {open && active && (
+                                    <div className="w-2 h-2 rounded-full bg-primary"></div>
                                   )}
                                 </div>
                               </SidebarMenuButton>
                               {item.items && open && (
-                                <div className="ml-9 mt-1 space-y-1 border-l-2 border-muted pl-2">
+                                <div className="ml-6 mt-2 space-y-1.5 pl-2">
                                   {item.items.map((subItem) => (
                                     <div
                                       key={subItem.href}
-                                      className={`cursor-pointer px-3 py-2 rounded-md text-sm transition-colors ${pathname === subItem.href
-                                        ? "text-primary font-medium bg-primary/10"
-                                        : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                                      className={`cursor-pointer px-3 py-2.5 rounded-xl text-sm transition-all duration-200 ${pathname === subItem.href
+                                        ? "bg-gradient-to-br from-primary/15 to-primary/5 text-primary font-medium shadow-sm"
+                                        : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
                                         }`}
                                       onClick={() => router.push(subItem.href)}
                                     >

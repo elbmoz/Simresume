@@ -83,3 +83,20 @@ export const IconAI: React.FC<IconProps> = ({ size = 24, className, active }) =>
     <rect x="5" y="28" width="8" height="8" rx="2" fill="#FA8C16" transform="rotate(25 9 32)" />
   </svg>
 );
+
+// Smart Score: Rating/Scoring Icon (Flat Vibrant Green)
+export const IconSmartScore: React.FC<IconProps> = ({ size = 24, className, active }) => (
+  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Background Circle - Vibrant Green */}
+    <circle cx="20" cy="20" r="16" fill="#52C41A" />
+    
+    {/* Score Graph - White */}
+    <rect x="10" y="22" width="4" height="8" rx="1" fill="white" fillOpacity="0.7" />
+    <rect x="15" y="16" width="4" height="14" rx="1" fill="white" fillOpacity="0.85" />
+    <rect x="20" y="10" width="4" height="20" rx="1" fill="white" />
+    <rect x="25" y="18" width="4" height="12" rx="1" fill="white" fillOpacity="0.85" />
+    
+    {/* Star Indicator - Gold */}
+    <path d="M20 7L21.5 11.5L26.5 11.5L22.5 14.5L24 19.5L20 16.5L16 19.5L17.5 14.5L13.5 11.5L18.5 11.5L20 7Z" fill="#FAAD14" />
+  </svg>
+);

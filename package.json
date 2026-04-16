@@ -1,5 +1,5 @@
 {
-  "name": "magic-resume",
+  "name": "simresume",
   "version": "2.0.5",
   "private": true,
   "type": "module",
@@ -12,6 +12,17 @@
     "release": "bumpp",
     "generate:template-snapshots": "tsx scripts/generate-template-snapshots.ts",
     "install:playwright": "playwright install chromium"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@heroui/shared-utils",
+      "@parcel/watcher",
+      "core-js",
+      "esbuild",
+      "puppeteer",
+      "sharp",
+      "workerd"
+    ]
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

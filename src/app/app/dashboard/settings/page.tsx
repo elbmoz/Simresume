@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Folder, Trash2 } from "lucide-react";
+import { Folder, Trash2, Palette } from "lucide-react";
 import { useTranslations } from "@/i18n/compat/client";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +16,7 @@ import {
   storeConfig,
   verifyPermission,
 } from "@/utils/fileSystem";
+import { ThemeColorSelector } from "@/components/shared/ThemeColorSelector";
 
 const SettingsPage = () => {
   const [directoryHandle, setDirectoryHandle] =
@@ -89,6 +90,27 @@ const SettingsPage = () => {
         </div>
 
         <div className="space-y-6">
+          <Card className="overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md transition-all duration-300 bg-white dark:bg-gray-900/50">
+            <CardHeader className="border-b border-gray-100 dark:border-gray-800/50 pb-6">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-xl bg-purple-50 dark:bg-purple-900/20 shrink-0">
+                  <Palette className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                </div>
+                <div className="space-y-1">
+                  <CardTitle className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                    主题设置
+                  </CardTitle>
+                  <CardDescription className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
+                    选择您喜欢的配色主题
+                  </CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="pt-8 px-6 pb-8 md:px-8">
+              <ThemeColorSelector />
+            </CardContent>
+          </Card>
+
           <Card className="overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md transition-all duration-300 bg-white dark:bg-gray-900/50">
             <CardHeader className="border-b border-gray-100 dark:border-gray-800/50 pb-6">
               <div className="flex items-start gap-4">
