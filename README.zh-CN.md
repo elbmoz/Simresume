@@ -1,159 +1,183 @@
 <div align="center">
 
-# ✨ Simresume ✨
+# ☁️ Simresume
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![TanStack Start](https://img.shields.io/badge/TanStack_Start-latest-black)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-10.0-purple)
+<a href="https://github.com/JOYCEQL/simresume/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/License-Apache_2.0-soft?style=flat-square&color=9B8AA5" alt="License">
+</a>
+<a href="https://tanstack.com/start/latest">
+  <img src="https://img.shields.io/badge/TanStack_Start-latest-soft?style=flat-square&color=7B9E87" alt="TanStack Start">
+</a>
+<a href="https://framer.com/motion">
+  <img src="https://img.shields.io/badge/Framer_Motion-11-soft?style=flat-square&color=B5A191" alt="Framer Motion">
+</a>
 
-<a href="https://trendshift.io/repositories/13077" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13077" alt="Simresume | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
+<a href="https://trendshift.io/repositories/13077" target="_blank">
+  <img src="https://trendshift.io/api/badge/repositories/13077" alt="Trendshift" style="width: 250px; height: 55px;" width="250" height="55">
+</a>
 
 简体中文 | [English](./README.md)
 
 </div>
 
-Simresume 是一个现代化的在线简历编辑器，让创建专业简历变得简单有趣。基于 TanStack Start 和 Motion 构建，支持实时预览和自定义主题。
+---
 
-## 📸 项目截图
+> 温柔而直观的简历编辑器，将你的故事化作优雅的文档。
+>
+> *源自 Magic Resume*
 
-<img width="1920" height="1440" alt="85_1x_shots_so" src="https://github.com/user-attachments/assets/4667e49a-7bf2-4379-9390-725e42799dc7" />
+## ✦ 预览
 
+<p align="center">
+  <img src="./public/web-shot.png" alt="Simresume 预览" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(155, 138, 165, 0.2);">
+</p>
 
-## ✨ 特性
+## ✦ 功能特性
 
-- 🚀 基于 TanStack Start 构建
-- 💫 流畅的动画效果 (Motion)
-- 🎨 自定义主题支持
-- 🌙 深色模式
-- 📤 导出为 PDF
-- 🔄 实时预览
-- 💾 自动保存
-- 🔒 硬盘级存储
+<table>
+<tr>
+<td width="50%">
 
-## 🛠️ 技术栈
+### 🤖 AI 智能助手
 
-- TanStack Start
-- TypeScript
-- Motion
-- Tiptap
-- Tailwind CSS
-- Zustand
-- Shadcn/ui
-- Lucide Icons
+- **内容润色** — AI 驱动，让你的表达更专业
+- **语法检测** — 实时检查，一键修正
+- **自定义指令** — 个性化 AI 行为
+- **多模型支持** — OpenAI、Gemini、DeepSeek、豆包
 
-## 🚀 快速开始
+</td>
+<td width="50%">
 
-1. 克隆项目
+### 📐 简历模板
+
+- **8 款专业设计** — 经典、现代、创意、优雅、编辑风、极简、左右、时间轴
+- **实时预览** — 编辑可见，即时反馈
+- **一键切换** — 更换模板，内容无损
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ✏️ 富文本编辑
+
+- **富文本编辑器** — 支持列表、链接、高亮、色彩
+- **拖拽排序** — 自由调整模块顺序
+- **自定义字段** — 灵活添加个性化信息
+- **证书展示** — 图文并茂呈现荣誉
+
+</td>
+<td width="50%">
+
+### 📤 导出与同步
+
+- **PDF 导出** — 清晰打印，即导即用
+- **Markdown 导出** — 轻量便携，利于版本管理
+- **本地存储** — 数据留在你的设备
+- **文件同步** — 可选备份至本地文件夹
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎨 个性化定制
+
+- **主题色彩** — 自由选择强调色
+- **深色模式** — 护眼舒适的暗色主题
+- **字体选择** — 多款字型随心切换
+- **间距控制** — 精细调整版式布局
+
+</td>
+<td width="50%">
+
+### 🌐 使用体验
+
+- **双语界面** — 中文 / English 无缝切换
+- **自动一页** — 智能排版，内容适中
+- **响应式设计** — 桌面端与移动端均可使用
+- **自动保存** — 告别丢失，安心编辑
+
+</td>
+</tr>
+</table>
+
+## ✦ 技术栈
+
+| 类别 | 技术 |
+|------|------|
+| 框架 | TanStack Start、React 18、TypeScript |
+| 样式 | Tailwind CSS、Framer Motion、Shadcn/ui |
+| 编辑器 | Tiptap v3 |
+| 状态管理 | Zustand |
+| 图标 | Lucide React |
+
+## ✦ 快速开始
 
 ```bash
+# 克隆项目
 git clone git@github.com:JOYCEQL/simresume.git
 cd simresume
-```
 
-2. 安装依赖
-
-```bash
+# 安装依赖
 pnpm install
-```
 
-3. 启动开发服务器
-
-```bash
+# 启动开发服务器
 pnpm dev
 ```
 
-4. 打开浏览器访问 `http://localhost:3000`
+打开浏览器访问 `http://localhost:3000` 即可开始制作简历。
 
-## 📦 构建打包
+## ✦ 构建与部署
 
 ```bash
+# 生产构建
 pnpm build
+
+# 启动生产服务器
+pnpm start
 ```
 
-## 🐳 Docker 部署
-
-### Docker Compose
-
-1. 确保你已经安装了 Docker 和 Docker Compose
-
-2. 在项目根目录运行：
+### Docker
 
 ```bash
 docker compose up -d
 ```
 
-这将会：
+## ✦ 路线图
 
-- 自动构建应用镜像
-- 在后台启动容器
+- [x] AI 辅助编写
+- [x] 多语言支持（中/英）
+- [x] 8 款简历模板
+- [x] 自定义 AI 模型配置
+- [x] 自动一页纸
+- [x] Markdown 导出
+- [ ] 更多导出格式（Word、HTML）
+- [ ] 导入 PDF、Markdown
+- [ ] 在线简历托管
 
+## ✦ 开源协议
 
+本项目源代码基于 **Apache 2.0** 协议开源，附带商业使用限制。
 
-## 📝 开源协议与商业授权
-
-本项目源代码基于 **Apache 2.0** 协议开源，但附带**严格的商业使用限制**：
-
-- **个人免费**：仅限个人非商业目的（如个人学习交流、制作个人简历）免费使用。
-- **商用需授权**：严禁未经授权的商业化使用。任何组织或个人，若将其作为服务（SaaS/PaaS等）向公众提供以获取利益，或作为企业商业运营使用，或进行二次商业化开发，**无论是否修改源代码，均须获取商业授权**。
+- **个人免费** — 个人非商业目的免费使用
+- **商用需授权** — 任何组织或个人用于 SaaS、企业运营或二次商业化开发，均须获取商业授权
 
 详情请查看 [LICENSE](LICENSE) 文件。
 
-## 🗺️ 路线图
+## ✦ 联系方式
 
-- [x] AI 辅助编写
-- [x] 多语言支持
-- [ ] 支持更多简历模板
-- [ ] 更多格式导出
-- [x] 自定义模型
-- [x] 自动一页纸
-- [ ] 导入 PDF, Markdown 等
-- [ ] 在线简历托管
+| 平台 | 链接 |
+|------|------|
 
-## 📈 Star History
+| 邮箱 | <2259096680@qq.com> |
 
-<a href="https://star-history.com/#JOYCEQL/simresume&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=JOYCEQL/simresume&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=JOYCEQL/simresume&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=JOYCEQL/simresume&type=Date" />
- </picture>
-</a>
-
-## 📞 联系方式
-
-可以通过以下方式关注最新动态:
-
-- 作者：SiYue
-- X: @GuangzhouY81070
-- Discord: 欢迎加入群组 https://discord.gg/9mWgZrW3VN
-- 邮箱：18806723365@163.com
-- 微信群：扫码加入开发交流群
-  
-<img src="./images/wechat.jpg" width="200" alt="WeChat Group">
-
-- 项目主页：https://github.com/JOYCEQL/simresume
-
-## 🌟 支持项目
-
-<img src="https://github.com/JOYCEQL/picx-images-hosting/raw/master/pintu-fulicat.com-1741081632544.26lmg2uc2m.webp" width="320"  alt="图片描述">
-
-## ❤️ 赞助名单
+---
 
 <div align="center">
-  <h3>Sponsors</h3>
-  <p>如果您赞助了本项目，但没展示在这里，请联系我。</p>
-  <p>
-    <a href="https://github.com/yj147">
-      <img src="https://github.com/yj147.png?size=40" width="40" height="40" alt="@yj147" />
-    </a>
-    <a href="https://github.com/someone1128">
-      <img src="https://github.com/someone1128.png?size=40" width="40" height="40" alt="@someone1128" />
-    </a>
-    <!-- 在这里继续添加赞助者：
-    <a href="https://github.com/<username>">
-      <img src="https://github.com/<username>.png?size=40" width="40" height="40" alt="@<username>" />
-    </a>
-    -->
-  </p>
+
+如果这个项目对你有帮助，请给它一个 ⭐
+
+**[赞助支持](https://github.com/JOYCEQL/simresume#sponsors)** · **[报告问题](https://github.com/JOYCEQL/simresume/issues)** · **[功能建议](https://github.com/JOYCEQL/simresume/issues)**
+
 </div>

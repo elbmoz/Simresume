@@ -1,159 +1,183 @@
 <div align="center">
 
-# ✨ Simresume ✨
+# ☁️ Simresume
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![TanStack Start](https://img.shields.io/badge/TanStack_Start-latest-black)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-10.0-purple)
+<a href="https://github.com/JOYCEQL/simresume/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/License-Apache_2.0-soft?style=flat-square&color=9B8AA5" alt="License">
+</a>
+<a href="https://tanstack.com/start/latest">
+  <img src="https://img.shields.io/badge/TanStack_Start-latest-soft?style=flat-square&color=7B9E87" alt="TanStack Start">
+</a>
+<a href="https://framer.com/motion">
+  <img src="https://img.shields.io/badge/Framer_Motion-11-soft?style=flat-square&color=B5A191" alt="Framer Motion">
+</a>
 
-<a href="https://trendshift.io/repositories/13077" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13077" alt="Simresume | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<a href="https://trendshift.io/repositories/13077" target="_blank">
+  <img src="https://trendshift.io/api/badge/repositories/13077" alt="Trendshift" style="width: 250px; height: 55px;" width="250" height="55">
+</a>
 
 [简体中文](./README.zh-CN.md) | English
 
 </div>
 
-Simresume is a modern online resume editor that makes creating professional resumes simple and enjoyable. Built with TanStack Start and Framer Motion, it supports real-time preview and custom themes.
+---
 
-## 📸 Screenshots
+> A gentle, intuitive resume editor that turns your stories into elegant documents.
+>
+> *Evolved from Magic Resume*
 
-<img width="1920" height="1440" alt="336_1x_shots_so" src="https://github.com/user-attachments/assets/18969a17-06f8-4a4b-94eb-284ba8442620" />
+## ✦ Preview
 
+<p align="center">
+  <img src="./public/web-shot.png" alt="Simresume Preview" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(155, 138, 165, 0.2);">
+</p>
 
-## ✨ Features
+## ✦ Features
 
-- 🚀 Built with TanStack Start
-- 💫 Smooth animations (Framer Motion)
-- 🎨 Custom theme support
-- 📱 Responsive design
-- 🌙 Dark mode
-- 📤 Export to PDF
-- 🔄 Real-time preview
-- 💾 Auto-save
-- 🔒 Local storage
+<table>
+<tr>
+<td width="50%">
 
-## 🛠️ Tech Stack
+### 🤖 AI Assistant
 
-- TanStack Start
-- TypeScript
-- Motion
-- Tiptap
-- Tailwind CSS
-- Zustand
-- Shadcn/ui
-- Lucide Icons
+- **Smart Polish** — Refine your content with AI-powered suggestions
+- **Grammar Check** — Real-time error detection with one-click fixes
+- **Custom Instructions** — Personalized AI behavior for your needs
+- **Multi-Model Support** — OpenAI, Gemini, DeepSeek, Doubao
 
-## 🚀 Quick Start
+</td>
+<td width="50%">
 
-1. Clone the project
+### 📐 Templates
+
+- **8 Professional Designs** — Classic, Modern, Creative, Elegant, Editorial, Minimalist, Left-Right, Timeline
+- **Live Preview** — See changes instantly as you type
+- **One-Click Switch** — Change templates without losing content
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### ✏️ Rich Editing
+
+- **Rich Text Editor** — Format with lists, links, highlights, colors
+- **Drag & Drop Sections** — Reorder with ease
+- **Custom Fields** — Add personalized information fields
+- **Certificates Section** — Showcase your achievements with images
+
+</td>
+<td width="50%">
+
+### 📤 Export & Sync
+
+- **PDF Export** — Crisp, print-ready documents
+- **Markdown Export** — Portable, version-control friendly
+- **Local Storage** — Data stays on your device
+- **File Sync** — Optional backup to local folder
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎨 Customization
+
+- **Theme Colors** — Choose your accent color
+- **Dark Mode** — Easy on the eyes
+- **Font Selection** — Multiple typeface options
+- **Spacing Controls** — Fine-tune your layout
+
+</td>
+<td width="50%">
+
+### 🌐 Experience
+
+- **Bilingual** — Chinese & English interfaces
+- **Auto One-Page** — Smart content fitting
+- **Responsive Design** — Works on desktop and mobile
+- **Auto-Save** — Never lose your work
+
+</td>
+</tr>
+</table>
+
+## ✦ Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| Framework | TanStack Start, React 18, TypeScript |
+| Styling | Tailwind CSS, Framer Motion, Shadcn/ui |
+| Editor | Tiptap v3 |
+| State | Zustand |
+| Icons | Lucide React |
+
+## ✦ Quick Start
 
 ```bash
+# Clone the repository
 git clone git@github.com:JOYCEQL/simresume.git
 cd simresume
-```
 
-2. Install dependencies
-
-```bash
+# Install dependencies
 pnpm install
-```
 
-3. Start development server
-
-```bash
+# Start development server
 pnpm dev
 ```
 
-4. Open browser and visit `http://localhost:3000`
+Visit `http://localhost:3000` to start creating your resume.
 
-## 📦 Build and Deploy
+## ✦ Build & Deploy
 
 ```bash
+# Production build
 pnpm build
+
+# Start production server
+pnpm start
 ```
 
-
-## 🐳 Docker Deployment
-
-### Docker Compose
-
-1. Ensure you have Docker and Docker Compose installed
-
-2. Run the following command in the project root directory:
+### Docker
 
 ```bash
 docker compose up -d
 ```
 
-This will:
-
-- Automatically build the application image
-- Start the container in the background
-
-
-## 📝 License and Commercial Use
-
-The source code of this project is open-sourced under the **Apache 2.0** license, but with **strict commercial use restrictions**:
-
-- **Free for Personal Use**: Free to use purely for personal, non-commercial purposes (e.g., personal learning, creating your own resume).
-- **Commercial License Required**: Unauthorized commercial use is strictly prohibited. Any organization or individual that provides it as a service (SaaS/PaaS, etc.) to the public for profit, uses it for enterprise commercial operations, or conducts secondary commercial development, **must obtain a commercial license, regardless of whether the source code has been modified**.
-
-Please see the [LICENSE](LICENSE) file for detailed terms.
-
-## 🗺️ Roadmap
+## ✦ Roadmap
 
 - [x] AI-assisted writing
-- [x] Multi-language support
-- [ ] Support for more resume templates
-- [ ] Support for more export formats
-- [ ] Import PDF, Markdown, etc.
-- [x] Custom model
-- [x] Auto one page
+- [x] Multi-language support (zh/en)
+- [x] 8 resume templates
+- [x] Custom AI model configuration
+- [x] Auto one-page layout
+- [x] Markdown export
+- [ ] More export formats (Word, HTML)
+- [ ] Import PDF & Markdown
 - [ ] Online resume hosting
 
-## 📈 Star History
+## ✦ License
 
-<a href="https://star-history.com/#JOYCEQL/simresume&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=JOYCEQL/simresume&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=JOYCEQL/simresume&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=JOYCEQL/simresume&type=Date" />
- </picture>
-</a>
+This project is open-sourced under the **Apache 2.0** license with commercial use restrictions.
 
-## 📞 Contact
+- **Personal Use** — Free for personal, non-commercial purposes
+- **Commercial Use** — Requires a commercial license for SaaS, enterprise, or any profit-oriented use
 
-You can follow the latest updates via:
+See [LICENSE](LICENSE) for details.
 
-- Author: Siyue
-- X: @GuangzhouY81070
-- Discord: Join our community https://discord.gg/9mWgZrW3VN
-- Email: 18806723365@163.com
-- WeChat Group: Scan to join our developer community
+## ✦ Contact
 
-  <img src="./images/wechat.jpg" width="200" alt="WeChat Group">
+| Platform | Link |
+|----------|------|
 
-- Project Homepage: https://github.com/JOYCEQL/simresume
+| Email | <2259096680@qq.com> |
 
-## 🌟 Support
-
-If you find this project helpful, please give it a star ⭐️
-
-## ❤️ Sponsors
+---
 
 <div align="center">
-  <h3>Sponsors</h3>
-  <p>If you sponsored this project but are not listed here, please contact me.</p>
-  <p>
-    <a href="https://github.com/yj147">
-      <img src="https://github.com/yj147.png?size=40" width="40" height="40" alt="@yj147" />
-    </a>
-    <a href="https://github.com/someone1128">
-      <img src="https://github.com/someone1128.png?size=40" width="40" height="40" alt="@someone1128" />
-    </a>
-    <!-- Add more sponsors here:
-    <a href="https://github.com/<username>">
-      <img src="https://github.com/<username>.png?size=40" width="40" height="40" alt="@<username>" />
-    </a>
-    -->
-  </p>
+
+If you find this project helpful, consider giving it a ⭐
+
+**[Sponsors](https://github.com/JOYCEQL/simresume#sponsors)** · **[Report Bug](https://github.com/JOYCEQL/simresume/issues)** · **[Request Feature](https://github.com/JOYCEQL/simresume/issues)**
+
 </div>
